@@ -1,0 +1,103 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+body {
+      font-weight: lighter;
+      font-size: 16px;
+      font-family: "Raleway", sans-serif;
+}
+ /*em vez da foto na pagina inicial adiciona um espaço entre a navbar e o conteúdo para funcionar ok a responsividade*/       
+header  {
+      width: 15%;
+      height: 15vh;
+      background-size: cover;
+}
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+
+    section {
+      display: table;
+      width: 100%;
+    }
+    .center{
+      margin-top: 10px;
+    }
+    .height-88 {
+      background: #FF6347;
+      height: 80vh;
+    }
+    .height-75 {
+      background:   #4682B4;
+      height: 78vh;
+    }
+    .height-95 {
+      background:   white;
+      height: 95vh;
+    }
+    .height-20 {
+      background:  white;
+      height: 20vh;
+      text-align: center;
+    }
+    .height-85 {
+      background: #4169E1;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .content {
+      color: #ffffff;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 7%;
+    }
+#logo{
+      width: 40%
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: center;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+      align-content: center;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+@media (max-width: 767px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+      header  {
+      width: 25%;
+      height: 25vh;
+      background-size: cover;
+}
+    }

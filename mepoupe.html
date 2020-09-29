@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="icones/ahbordo_icone.png"><!--para mostrar o icone na tab da página-->
+<title>Ah Bordo | Me poupe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="estilos/index.css"><!--link para o estilo da pagina-->
+<link rel="stylesheet" href="js/index.css"><!--link para o js da pagina inicial-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway:800,300" rel="stylesheet" type="text/css"/>
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="jquery/dist/js/jquery.smartTab.js"></script>
+<link href="jquery/dist/css/smart_tab_brick.min.css" rel="stylesheet" />
+<script type="text/javascript" src="dist/js/jquery.smartTab.min.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* 5 colunas de cards */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* Remove espaço extra */
+.row {margin: 0 -5px;}
+
+/* limpar o float depois das colunas */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* responsividade das colunas */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* estilo dos cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar presa no topo -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item"><img src="imagens/ahbordo_logo.png" style="width: 20%;"></a>
+    <!-- float links para a direita mas não esconde os links, alterado do código do w3 schools -->
+    <div class="w3-right ">
+      <a href="voluntariado.html" class="w3-bar-item w3-button centraliza">Bora ajudar?</a>
+      <a href="transporte.html" class="w3-bar-item w3-button">Fui!</a>
+      <a href="#" class="w3-bar-item w3-button">Me poupe!</a>
+      <a href="destinos.html" class="w3-bar-item w3-button">Brota aí!</a>
+      <a href="cadastro.html" class="w3-bar-item w3-button">Cadastro</a>
+      <a href="login.html" class="w3-bar-item w3-button">Login</a>
+    </div>
+  </div>
+</div>
+<header></header>
+<!-- Conteúdo da página vai aqui dentro, já está estilizado, não mexer -->
+<!-- barra de navegação vertical, mostra na mesma página as diferentes opções,feita com jquery -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+  <section class="col-xs-12 col-sm-6 col-md-12 height-80">
+    <p style="text-align: center;">ME POUPE</p>
+    <hr>
+    <div id="smarttab" class="st st-justified st-theme-brick st-vertical">
+        <ul class="nav">
+            <li>
+              <a class="nav-link" href="mepoupe.html#tab-1">
+                <strong>FORMAS DE GANHAR DINHEIRO</strong>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="mepoupe.html#tab-2">
+                <strong>Forma 1</strong> Bolo de Pote
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="mepoupe.html#tab-3">
+                <strong>Forma 2</strong> Brigadeiro
+              </a>
+            </li>
+            <li>
+              <a class="nav-link active" href="mepoupe.html#tab-4">
+                <strong>Forma 3</strong> Passear com Cachorro
+              </a>
+            </li>
+            <li>
+              <a class="nav-link active" href="mepoupe.html#tab-5">
+                <strong>Forma 4</strong> Faça um Brechó
+              </a>
+            </li>
+        </ul>
+        <div class="tab-content" style="height: 361.438px;">
+            <div id="tab-1" class="tab-pane" role="tabpanel" style="position: static; top: auto; display: none;">
+              <h3>Formas de ganhar dinheiro</h3>
+                <div>Aqui vamos te dar algumas dicas de como juntar aquela grana para que você possa realizar sua primeira viagem. Mas antes, pense em qual destino deseja ir, e planeje a sua forma de ir, além de se você quer passear pela cidade estipular quanto por dia você deseja gastar, assim será mais fácil você estimar uma quantia inicial para juntar.
+                  <div class="row">
+                    <div class="column">
+                      <br>
+                      <div class="card">
+                        <h3>Dica 1</h3>
+                        <h7>Definir o orçamento para a viagem e a necessidade de adaptar</h7>
+                      </div>
+                    </div>
+
+                    <div class="column">
+                      <div class="card">
+                        <h3>Dica 2</h3>
+                        <h7>Definir um destino que é fácil de juntar a grana e definir você mesmo o seu roteiro de passeios<br></h7>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <h3>Dica 3</h3>
+                        <h7>Caso, for comprar passagens aéreas, 
+                        <br>analisar histórico de preços e emitir alertas para passagens antes da comprar</h7>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <h3>Dica 4</h3>
+                        <h7>Definir em quanto tempo você vai levantar por semana ou por mês para ter uma estimativa de tempo para juntar todo o dinheiro que você irá precisar.<h7>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <h3>Dica 5</h3>
+                        <h7>Definir qual ou quais atividade(s) irá fazer para atingir seu objetivo</h7>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div id="tab-2" class="tab-pane" role="tabpanel" style="position: static; top: auto; display: none;">
+              <h3>Bolo no Pote</h3>
+                <div>A ideia mais comum a pensar é vender bolo no pote, e porque não?! A cada dia que passa o bolo no pote é um dos lanches e sobremesas favoritos de muitas pessoas, principalmente por ser um bolo mais molhadinho. E uma ótima forma de levantar aquela graninha.
+              <div class="row">
+                <div class="column">
+                  <br>
+                  <div class="card">
+                    <h3><a href="https://bolodepoteparavender.com.br/">Bolo de Pote Para Vender</a></h3>
+                    <h7>Um curso com um único pagamento, e nele você aprende a fazer, eles disponibilizam uma calculadora para você calculadora de custos e dicas de como aumentar suas vendas e como deixar seus bolos mais apresentáveis.</h7>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <br><br>
+                  <div class="card">
+                    <h3><a href="https://www.amandocozinhar.com/2015/01/5-receitas-fazer-bolos-no-pote-vender.html">Amando Cozinhar</a></h3>
+                    <h7>No site você vai encontrar algumas receitas e como montar o seu bolo no pote para vender</h7>
+                    </div>
+                </div>
+                
+                <div class="column">
+                  <br>
+                  <div class="card">
+                    <h3><a href="https://comidinhasdochef.com/como-montar-o-bolo-no-pote-e-quanto-cobrar/">Comidinhas do Chef</a></h3>
+                    <h7>Aqui você aprende a calcular seu custo, ou seja, quanto para você fazer seus bolos e como calcular o preço para venda, além é claro de uma receita e dicas de como fazer</h7>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div id="tab-3" class="tab-pane" role="tabpanel" style="position: static; top: auto; display: none;">
+              <h3>Brigadeiro</h3>
+                O tradicional doce brasileiro e o queridinho das festas infantis é uma solução deliciosa e bastante atrativa para conseguir levantar a grana para a sua primeira viagem
+              <div class="row">
+                <div class="column">
+                  <br>
+                  <div class="card">
+                    <h3><a href="https://www.acasaencantada.com.br/receita/brigadeiro-gourmet/">A Casa Encantada</a></h3>
+                    <h7>Dicas de como fazer seus brigadeiros</h7>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <br><br>
+                  <div class="card">
+                    <h3><a href="https://negociocaseiro.com.br/receita-de-brigadeiro-gourmet-para-vender/">Negócio Caseiro</a></h3>
+                    <h7>Vão te ensinar a fazer um brigadeiro gourmet para vender, dicas de como fazer um delicioso brigadeiro e como calcular o preço para o seu produto</h7>
+                    </div>
+                </div>
+                
+                <div class="column">
+                  <br>
+                  <div class="card">
+                    <h3><a href="https://negociodecozinha.com.br/brigadeiro-para-vender/">Negócio de Cozinha</a></h3>
+                    <h7>Vão te ensinar a fazer o brigadeiro tradicional e o gourmet, vai te dar dicas de como ganhar mais dinheiro, formas de vender o brigadeiro</h7>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-4" class="tab-pane" role="tabpanel" style="position: static; top: auto;">
+                <h3>Passear com cães</h3>
+                Essa talvez seja a menos trabalhosa, a única coisa que você precisa é gostar de cachorro e ter tempo para passear com os bichinhos. Simples e prático!
+                Para começar você poder baixar aplicativos como:
+              <div class="row">
+                <div class="column">
+                  <br>
+                  <div class="card">
+                    <h3><a href="https://www.doghero.com.br/">DogHero</a></h3>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <br>
+                  <div class="card">
+                    <h3><a href="http://www.dogwalk.com.br/">Dog Walk</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-5" class="tab-pane" role="tabpanel" style="position: static; top: auto;">
+                <h3>Faça um Brechó</h3>
+                Comece vendendo aquelas roupas que você não usa mais e que estão em bom estado, depois disso comece a comprar algumas peças para revender, use as redes sociais para divulgar suas peças e dê sugestões de looks, assim você pode fazer venda casada, a pessoa vê uma peça e acaba comprando outra por gostar do look.
+                Use sites e aplicativos como:
+
+              <div class="row">
+                <div class="column">
+                  <br>
+                  <div class="card">
+                    <h3><a href="https://www.olx.com.br/">OLX</a></h3>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <br>
+                  <div class="card">
+                    <h3><a href="https://www.mercadolivre.com.br/">Mercado Livre</a></h3>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <br>
+                  <div class="card">
+                    <h3><a href="https://www.enjoei.com.br/">Enjoei</a></h3>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
+    <p style="text-align: center;">Ah, Ah Bordo, eu já sei para onde ir, como ir e o quanto eu pretendo gastar ao todo na viagem e agora?</p><br><button class="btn btn-outline-info w3-block btn-lg"><a href="destinos.html"><p>Brota aí!</p></a></button>
+  </section>
+</div>
+<!-- fim conteudo da pagina -->
+<!--script que faz a mudança de conteudo das tabs -->
+<script type="text/javascript">
+        $('#smarttab').smartTab({
+
+  // Selected Tab, 0 = first tab
+  selected: 0,  
+
+  // Theme
+  theme: 'brick',
+
+  // Or 'vertical'
+  orientation: 'vertical',
+
+  // Justified layout for tabs
+  justified: true,
+
+  // Auto adjust content height
+  autoAdjustHeight: true,
+
+  // Supports for Back button
+  backButtonSupport: true,
+  
+  // Enables URL hash
+  enableURLhash: true,
+    
+  // Configs animations here
+  transition: {
+
+    // deslizar na vertical
+    animation: 'slide-vertical',
+
+    // velocidade de transição
+    speed: '400',
+
+    // easing function
+    easing: ''
+
+  },
+
+  // mudar automaticamente o conteudo entre as tabs
+  autoProgress: {
+    
+    // enable
+    enabled: false,
+    
+    // interval in ms
+    interval: 3500,
+
+    // stop on focus
+    stopOnFocus: true
+
+  },
+
+  // navegação do teclado
+  keyboardSettings: {
+
+    // enable
+    keyNavigation: true,
+
+    // keycodes
+    keyLeft: [37],
+    keyRight: [39]
+
+  }
+
+});
+    </script>
+
+<!-- Rodapé já comentado em outros códigos, padrão, alterado do bootsnip por leticia-->
+    <link rel="stylesheet" href="estilos/rodape.css"><!--link para o estilo do rodapé-->
+   <section id="footer">
+      <div class="container">
+         <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+               <img id="logo" src="imagens/ahbordo_logo.png" style="width: 470px;height: 300px;">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+               <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+               <ul class="list-unstyled list-inline social text-center">
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+               </ul>
+            </div>
+            <hr>
+         </div>   
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+               <p><h6>Ah Bordo com você.</h6> </p>
+               <p class="h6">© Todos os Direitos reservados. Imagens by<a href="http://www.freepik.com">Freepik Template by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">w3.css</a></p>
+            </div>
+            <hr>
+         </div>   
+      </div>
+   </section>
+   </div>
+   <!-- fim rodapé -->
+</body>
+</html>

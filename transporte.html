@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="icones/ahbordo_icone.png"><!--para mostrar o icone na tab da página-->
+<title>Ah Bordo | Fui!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="estilos/index.css"><!--link para o estilo da pagina-->
+<link rel="stylesheet" href="js/index.css"><!--link para o js da pagina inicial-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway:800,300" rel="stylesheet" type="text/css"/>
+<style>
+  * {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+  font-color:blue;}
+
+/* Centralizar website */
+.main {
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.certo{
+  margin: 20px -16px;
+}
+
+/* adicionar espaço entre as colunas */
+.certo,
+.certo > .column {
+  padding: 8px;
+}
+
+/* criar duas colunas que flutuem uma do lado da outra */
+.column {
+  float: left;
+  width: 50%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.certo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  color:gray;
+}
+
+/* mostrar os elementos filtrados */
+.show {
+  display: block;
+}
+
+/* estilizar botões */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.imagem{
+  width: 200px;
+  height: 200px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar presa no topo -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item"><img src="imagens/ahbordo_logo.png" style="width: 20%;"></a>
+    <!-- float para a direita mas não esconde links-->
+    <div class="w3-right">
+      <a href="voluntariado.html" class="w3-bar-item w3-button">Bora ajudar?</a>
+      <a href="#" class="w3-bar-item w3-button">Fui!</a>
+      <a href="mepoupe.html" class="w3-bar-item w3-button">Me poupe!</a>
+      <a href="destinos.html" class="w3-bar-item w3-button">Brota aí!</a>
+      <a href="cadastro.html" class="w3-bar-item w3-button">Cadastro</a>
+      <a href="login.html" class="w3-bar-item w3-button">Login</a>
+    </div>
+  </div>
+</div>
+<header></header><!--faz parte do código da navbar, NÃO deve-se RETIRAR MAS FOI ALTERADO NO CSS-->
+
+<div class="main">
+<div class="w3-content w3-padding" style="max-width:1564px">
+<div class="container">
+<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5 text-center">
+  <br><br>
+<p>Opções de Transporte</p>
+<h4> Trazemos aqui pra você algumas opções de apps e sites de transporte para você ir aonde deseja economizando uma boa grana! </h4><hr>
+</div>
+<div id="myBtnContainer" class="col-xs-10 col-md-10 col-sm-5">
+  <button class="btn active" onclick="filterSelection('all')"> Mostre Todas</button>
+  <button class="btn" onclick="filterSelection('carona')"> Carona</button>
+  <button class="btn" onclick="filterSelection('onibus')"> Ônibus</button>
+  <button class="btn" onclick="filterSelection('aviao')"> Avião</button>
+</div>
+
+<!-- cards com os sites -->
+<div class="certo">
+  <div class="col-xs-10 col-md-10 col-sm-5">
+  <div class="column carona col-xs-10 col-md-10 col-sm-5">
+    <div class="content col-xs-10 col-md-10 col-sm-5">
+      <img class="imagem" src="imagens/blablacar.png"  alt="BlaBlaCar" style="width:100%"><br>
+      <h2><a href="https://www.blablacar.com.br/">BlaBlaCar</a></h2>
+      <h6>Um app que te ajuda a encontrar condutores com lugares livres no carro e que estão indo para o mesmo destino que você. Eles vão te dar uma mãozinha e vocês dividem os custos de gasolina e pedágio.</h6>
+    </div>
+  </div>
+  <div class="column carona col-xs-10 col-md-10 col-sm-12">
+    <div class="content col-xs-10 col-md-10 col-sm-5">
+    <img class="imagem" src="imagens/waze.png" alt="Waze Carpool" style="width:100%">
+      <h2><a href="https://www.waze.com/pt-BR/carpool">Waze Carpool</a></h2>
+      <h6>Nesse app, os motoristas buscam pessoas para compartilhar os gastos de viagem, como gasolina e pedágios.</h6>
+    </div>
+  </div>
+</div>
+</div>
+<div class="certo">
+  <div class="col-xs-10 col-md-10 col-sm-5">
+   <div class="column aviao col-xs-10 col-md-10 col-sm-5">
+    <div class="content col-xs-10 col-md-10 col-sm-5">
+    <img class="imagem" src="imagens/momondo.jpg" alt="Momondo" style="width:100%">
+      <h2><a href="https://www.momondo.com.br/horizon/sem/flights/general?lang=pt&utm_campaign=passagem&utm_content=BroadMatchModifier+-+passagem&utm_medium=cpc&utm_source=bing&utm_term=%2Bpassagem&skipapp=true">Momondo</a></h2>
+      <h6>Um app que te ajuda a encontrar passagens aéreas em promoção e trabalha com as principais companhias aéreas low fare (de baixo custo).</h6>
+    </div>
+  </div>
+
+  <div class="column aviao col-xs-10 col-md-10 col-sm-5">
+    <div class="content col-xs-10 col-md-10 col-sm-5">
+      <img class="imagem" src="imagens/sky.jpg" alt="SkyScanner" style="width:100%">
+      <h2><a href="https://www.skyscanner.com.br/?_ga=1.101157761.1400865486.1391377231&AID=11839040&PID=7343589&associateid=AFF_TRA_00014_00001&utm_source=commission+junction&utm_medium=affiliate&utm_campaign=uk-travel-4179862-7343589&utm_content=uk-travel-11839040&_tck=b/fqwn9l6MTFqFPLF1/8ilVE0fESuLlDT8coKepLQog">SkyScanner</a></h2>
+      <h6>Um app que te ajuda a encontrar condutores com lugares livres no carro e que estão indo para o mesmo destino que você. Eles vão te dar uma mãozinha e vocês dividem os custos de gasolina e pedágio.</h6>
+    </div>
+  </div>
+  <div class="column onibus col-xs-10 col-md-10 col-sm-5">
+    <div class="content col-xs-10 col-md-10 col-sm-5">
+      <img class="imagem" src="imagens/deonibus.webp" alt="DeÔnibus" style="width:100%">
+      <h2><a href="https://deonibus.com/">DeÔnibus</a></h2>
+      <h6>A DeÔnibus é um site para comparar e encontrar a melhor opção de passagens de ônibus rodoviários.</h6>
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+</div>
+<!-- final da tabela -->
+</div>
+<!--js que filtra as opções codigo retirado do w3 schools-->
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<!-- Rodapé já comentado em outros códigos, alterado por letícia-->
+    <link rel="stylesheet" href="estilos/rodape.css"><!--link para o estilo do rodapé-->
+   <section id="footer">
+      <div class="container">
+         <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+               <img id="logo" src="imagens/ahbordo_logo.png" style="width: 470px;height: 300px;">
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+               <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+               <ul class="list-unstyled list-inline social text-center">
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+               </ul>
+            </div>
+            <hr>
+         </div>   
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+               <p><h6>Ah Bordo com você.</h6> </p>
+               <p class="h6">© Todos os Direitos reservados. Imagens by<a href="http://www.freepik.com">Freepik Template by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">w3.css</a></p>
+            </div>
+            <hr>
+         </div>   
+      </div>
+   </section>
+   </div>
+   <!-- fim rodapé -->
+</body>
+</html>
